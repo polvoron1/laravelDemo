@@ -17,6 +17,8 @@ class Product extends Model
      * $this->attributes['updated_at'] - timestamp - contains the product update date
      */
 
+    protected $fillable = ['name', 'description','image','price'];
+
     public function getId()
     {
         return $this->attributes['id'];
